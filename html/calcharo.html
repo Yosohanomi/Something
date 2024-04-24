@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcharo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo__link">
+            <img src="./images/img/logo.jpg" alt="logo" class="logo calchlogo">
+            <p class="logo__text">Calcharo</p>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Gameplay</a>
+                    </li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Anons</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="index.html">Acheron</a></li>
+                </ul>
+            </nav>
+        </a>
+
+    </header>
+
+    <main >
+        <section class="hero">
+            <div class="left-thumb hero-thumb">
+                <img src="./images/img/left.jpg" alt="calcharo" class="img__left">
+            </div>
+
+            <div class="right-thumb hero-thumb">
+                <img src="./images/img/right.jpg" alt="calcharo" class="img__right">
+            </div>
+            <button class="btn-open" data-modal-open>Order</button>
+        </section>
+    </main>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="close__btn" data-modal-close>
+                    <svg class="icon-close">
+                        <use href="./images/icons/symbol-defs[1].svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h2 class="modal__title">Reach out to us!</h2>
+                <form class="modal__form">
+                    <label for="" class="modal__label">
+                        <div class="modal__input-thumb">
+                            <input type="text" class="modal__input" placeholder="Your name*">
+                            <svg class="label-icon">
+                                <use href="./images/icons/symbol-defs[1].svg#icon-profile"></use>
+                            </svg>
+                        </div>
+                    </label>
+
+                    <label for="" class="modal__label">
+                        <div class="modal__input-thumb">
+                            <input type="text" class="modal__input" placeholder="Your name*">
+                            <svg class="label-icon">
+                                <use href="./images/icons/symbol-defs[1].svg#icon-envelop"></use>
+                            </svg>
+                        </div>
+                    </label>
+
+                    <label for="" class="modal__label">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Your message*"></textarea>
+                    </label>
+                    <button type="submit" class="modal__send-btn">Send message</button>
+                </form>
+                <iframe src="https://maps.app.goo.gl/FrLZjhcWKAEUPyHTA"></iframe>
+            </div>
+        </div>
+
+<script src="./js/modal.js"></script>
+</body>
+</html>
