@@ -1,8 +1,9 @@
 .header {    
     display: flex;
     align-items: center;
-    padding:25px 15px;
+    padding: 30px 50px;
     margin: 0 auto;
+    background-color: black;
 }
 .logo__link {
 }
@@ -15,9 +16,23 @@
 .header__nav {
 }
 .header__nav-list {
+    display: flex;
+    gap: 50px;
 }
 .header__nav-item {
 }
+
+.current::after {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: rgba(165, 31, 255, 0.753);
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+
 .header__nav-link {
 }
 
