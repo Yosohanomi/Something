@@ -105,53 +105,70 @@
 .overlay__text {
     color: #FFF;
 }
+#anons{
+    background-color: #3E3E3E;
+}
+.slide_menu {
+    display: flex;
+    background-image: url(/images/img/acheron.jpg);
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 100%;
+    color: #FFF;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    transform: translateX(-90%);
+    transition: all 400ms ease-in-out;
+}
+
+.slide_menu:hover{
+    transform: translateX(0%);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/img/acheron.jpg);
+}
+
+.slide_menu:hover .menu__title{
+    display: none;
+}
+
+.anons__list{
+    margin-left: 50px;
+}
+
+.anons__item {
+    color: #FFF;
+    font-size: 32px;
+    list-style: georgian;
+}
+
+.anons__item:hover,
+.anons__item:focus {
+    color: rgb(70, 0, 150);
+    background-color: #ffffff80;
+    border-radius: 10%;
+}
+
+
+.anons__text {
+    writing-mode: vertical-rl;
+    color: #ffffff;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.486);
+    font-size: 32px;
+}
+
+
 
 .section {
     height: 100vh;
 }
 
-#anons {
-    background-color: rgba(165, 31, 255, 0.753);
-}
 #gameplay {
     background-color: rgba(0, 0, 0, 0.20);
     position: relative;
 }
 
 
-#anons{
-    background-color: #3E3E3E;
-}
-.slide_menu {
-    display: flex;
-    background-color: #5d498d;
-    width: 50vw;
-    height: 500px;
-    color: #FFF;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    transform: translateX(-95%);
-    transition: all 400ms ease-in-out;
-}
-
-.slide_menu:hover{
-    transform: translateX(0%);
-}
-
-.slide_menu:hover .anons__text{
-    display: none;
-}
-
-
-.anons__text {
-    writing-mode: vertical-rl;
-    color: #FFF;
-}
-.anons__list {
-}
-.anons__item {
-}
 
 
 .backdrop {
