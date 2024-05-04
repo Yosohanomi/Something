@@ -24,7 +24,31 @@
     display: flex;
     gap: 50px;
 }
-.header__nav-item {
+.header__nav-item:last-child {
+    position: relative;
+}
+
+
+.submenu__header {
+    position: absolute;
+    /* width: 100%; */
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #FFF;
+    border: 1px dashed purple;
+    padding: 10px;
+}
+.submenu__item-header {
+}
+.submenu__link {
+}
+
+.header__nav-item:last-child:hover .submenu__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .current::after {
@@ -69,6 +93,8 @@
     background-color: rgba(51, 35, 66, 0.8);
     transform: translateX(0%);
 }
+
+
 
 
 .left-thumb {
