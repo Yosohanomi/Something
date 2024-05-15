@@ -308,7 +308,8 @@
     border: 1px solid #DCDCDC;
     background: #FFF;
     width: 557px;
-    padding: 30px 46px;
+    padding: 20px 20px;
+    margin-bottom: 10px;
 }
 
 .label-icon {
