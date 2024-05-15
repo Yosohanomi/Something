@@ -33,12 +33,13 @@
 }
 
 .header__nav-link::after {
-    content: " ";
+    content: "";
+    display: block;
     height: 4px;
     width: 100%;
     background-color: rgba(165, 31, 255, 0.753);
     border-radius: 2px;
-    margin-top: 15px;
+    margin-top: 10px;
     transform: scale(0);
     transform-origin: center right;
     transition: transform var(--animation), transform-origin var(--animation);
@@ -210,6 +211,16 @@
 #gameplay {
     background-color: rgba(0, 0, 0, 0.20);
     position: relative;
+}
+
+.btn-open {
+    position: absolute;
+    top: 250px;
+    left: 1500px;
+    color: #3E3E3E;
+    background-color:aliceblue;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 
