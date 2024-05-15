@@ -81,7 +81,6 @@
     position: absolute;
     border-radius: 20px;
     overflow: hidden;
-    border: 3px solid sandybrown;
 }
 
 .hero-thumb:hover .overlay {
@@ -100,7 +99,9 @@
 .left-thumb {
     left: 150px;
     width: 800px;
-    bottom: 300px;
+    bottom: 200px;
+    top: 100px;
+    margin-top: 80px;
 }
 
 .right-thumb {
@@ -129,7 +130,11 @@
     transition: transform 400ms ease-in-out;
 }
 .overlay__text {
+    display: flex;
     color: #FFF;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
 }
 #anons{
     background-color: #3E3E3E;
