@@ -89,11 +89,42 @@
     background-size: contain;
 }
 
+@keyframes border-color {
+    0% {
+        border: 3px solid rgb(90, 24, 145);
+    }
+
+    25% {
+        border: 3px solid rgb(0, 17, 255);
+    }
+
+    50% {
+        border: 3px solid rgb(255, 0, 212);
+    }
+
+    75% {
+        border: 3px solid rgb(9, 255, 0);
+    }
+
+    100% {
+        border: 3px solid rgb(90, 24, 145);
+    }
+}
+
 .hero-thumb {
     position: absolute;
     border-radius: 20px;
     overflow: hidden;
+    border: 3px solid rgb(90, 24, 145);
+    animation: border-color 2s linear infinite;
 }
+
+/* .hero-thumb:hover {
+    animation-name: border-color;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+} */
 
 .hero-thumb:hover .overlay {
     position: absolute;
